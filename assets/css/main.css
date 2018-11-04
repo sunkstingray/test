@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Georgia, serif;
+}
+
+header {
+  padding: 0 120px;
+  height: 92px;
+  border-top: 7px solid #1b81be;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+img.header-logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 212px;
+}
+
+.menu {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.menu ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.menu ul li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  color: #7d8075;
+  margin-right: 42px;
+  text-transform: uppercase;
+}
+
+.menu ul li:last-child {
+  margin-right: 0;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 72px 120px;
+}
+
+.left-menu {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 205px;
+          flex: 0 0 205px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  padding-right: 40px;
+}
+
+.left-menu ul {
+  list-style: none;
+}
+
+.left-menu ul li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: .9em;
+  padding: 16px 0;
+  border-bottom: 1px solid #cccccc;
+  color: #1b81be;
+}
+
+.left-menu ul li:last-child {
+  border-bottom: 0;
+}
+
+.body-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.body-text p {
+  font-size: .9em;
+  line-height: 1.8;
+}
+
+.body-text p a {
+  color: #855f9f;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #1b81be;
+  text-transform: uppercase;
+}
+
+.photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 120px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.photos img {
+  width: 290px;
+}
+
+.photo-container {
+  position: relative;
+  width: 290px;
+  height: 208px;
+  margin-bottom: 72px;
+}
+
+#photo-1 {
+  background-image: url("../images/grid-photo-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#photo-2 {
+  background-image: url("../images/grid-photo-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#photo-3 {
+  background-image: url("../images/grid-photo-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo-caption {
+  position: absolute;
+  bottom: 0;
+  width: 290px;
+  height: 44px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: .8em;
+  font-weight: 700;
+  opacity: .9;
+  line-height: 44px;
+}
+
+#photo-cap-1 {
+  background-color: #fabe42;
+}
+
+#photo-cap-2 {
+  background-color: #d6463f;
+}
+
+#photo-cap-3 {
+  background-color: #855f9f;
+}
+
+footer {
+  width: 100vw;
+  height: 140px;
+  background-color: #343531;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 120px;
+}
+
+.logo-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  font-size: .8em;
+}
+
+.logo-address img {
+  width: 212px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.address {
+  margin-top: 10px;
+}
+
+.address p, a {
+  color: #ffffff !important;
+  line-height: 1.5;
+}
+
+#donate-button {
+  background-color: #7eba55;
+  margin-right: 200px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 210px;
+  height: 46px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: .9em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+/*# sourceMappingURL=main.css.map */

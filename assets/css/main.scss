@@ -1,0 +1,237 @@
+// Sass Variables
+
+$blue: #1b81be;
+$green: #7eba55;
+$yellow: #fabe42;
+$red: #d6463f;
+$menu-color: #7d8075;
+$purple: #855f9f;
+$p-color: #333333;
+$h1-color: #000000;
+$divider-color: #cccccc;
+$bottom-box-color: #343531;
+$head-font: 'Montserrat', sans-serif;
+$body-font: Georgia, serif;
+
+
+// Resets
+
+* {
+        margin: 0;
+        padding: 0
+}
+
+html {
+        font-family: $body-font;
+}
+
+
+// Main Styling
+
+header {
+        // width: 100%;
+        padding: 0 120px;
+        height: 92px;
+        border-top: 7px solid $blue;
+        display: flex;
+        justify-content: space-between;
+}
+
+img.header-logo {
+        align-self: center;
+        width: 212px;
+}
+
+.menu {
+        align-self: center;
+}
+
+.menu ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+}
+
+.menu ul li {
+        font-family: $head-font;
+        font-weight: 700;
+        font-size: 1em;
+        color: $menu-color;
+        margin-right: 42px;
+        text-transform: uppercase;
+}
+
+.menu ul li:last-child {
+        margin-right: 0;
+}
+
+.hero img{
+        width: 100%;
+}
+
+.main {
+        display: flex;
+        flex: 1;
+        padding: 72px 120px;
+}
+
+.left-menu {
+        flex: 0 0 205px;
+        order: 1;
+        padding-right: 40px;
+}
+
+.left-menu ul {
+        list-style: none;
+}
+
+.left-menu ul li{
+        font-family: $head-font;
+        font-weight: 500;
+        font-size: .9em;
+        padding: 16px 0;
+        border-bottom: 1px solid $divider-color;
+        color: $blue;
+}
+
+.left-menu ul li:last-child{
+        border-bottom: 0;
+}
+
+.body-text {
+        flex: 1;
+        order: 2;
+}
+
+.body-text p {
+        font-size: .9em;
+        line-height: 1.8;
+}
+
+.body-text p a{
+        color: $purple;
+}
+
+h1 {
+        font-family: $head-font;
+        font-weight: 700;
+        font-size: 34px;
+        margin-bottom: 24px;
+}
+
+h2 {
+        font-family: $head-font;
+        font-weight: 400;
+        font-size: 22px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        color: $blue;
+        text-transform: uppercase;
+}
+.photos {
+        display: flex;
+        padding: 0 120px;
+        justify-content: space-between;
+}
+
+.photos img {
+        width: 290px;
+}
+
+.photo-container {
+        position: relative;
+        width: 290px;
+        height: 208px;
+        margin-bottom: 72px;
+}
+
+#photo-1 {
+        background-image: url('../images/grid-photo-1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+#photo-2 {
+        background-image: url('../images/grid-photo-2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+#photo-3 {
+        background-image: url('../images/grid-photo-3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.photo-caption {
+        position: absolute;
+        bottom: 0;
+        width: 290px;
+        height: 44px;
+        text-align: center;
+        color: #ffffff;
+        font-family: $head-font;
+        text-transform: uppercase;
+        font-size: .8em;
+        font-weight: 700;
+        opacity: .9;
+        line-height: 44px;
+}
+
+#photo-cap-1 {
+        background-color: $yellow;
+}
+
+#photo-cap-2 {
+        background-color: $red;
+}
+
+#photo-cap-3 {
+        background-color: $purple;
+}
+
+footer {
+        width: 100vw;
+        height: 140px;
+        background-color: $bottom-box-color;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 120px;
+}
+
+.logo-address {
+        display: flex;
+        width: 500px;
+        align-self: center;
+        justify-content: space-between;
+        font-family: $head-font;
+        font-size: .8em;
+}
+
+.logo-address img {
+        width: 212px;
+        align-self: center;
+}
+
+.address {
+        margin-top: 10px;
+}
+
+.address p,a {
+        color: #ffffff !important;
+        line-height: 1.5;
+}
+
+#donate-button {
+        background-color: $green;
+        margin-right: 200px;
+        align-self: center;
+        width: 210px;
+        height: 46px;
+        border: none;
+        font-family: $head-font;
+        font-weight: 700;
+        font-size: .9em;
+        text-transform: uppercase;
+        color: #ffffff;
+}
