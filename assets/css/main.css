@@ -43,17 +43,73 @@ img.header-logo {
           flex-direction: row;
 }
 
-.menu ul li {
+.menu ul li a {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1em;
   color: #7d8075;
-  margin-right: 42px;
+  margin-right: 14px;
+  padding: 0 14px;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 86px;
+  line-height: 92px;
+  text-decoration: none;
+}
+
+.menu-item {
+  border-bottom: 8px solid transparent;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+  border-bottom: 8px solid #7eba55;
+}
+
+.menu-item:hover > a {
+  color: #7eba55 !important;
 }
 
 .menu ul li:last-child {
   margin-right: 0;
+}
+
+.menu ul ul {
+  display: none;
+  position: absolute;
+}
+
+.menu ul li:hover > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sub-menu {
+  margin-top: 7px;
+  width: 200px;
+  background-color: #555751;
+  opacity: .96;
+  padding: 6px;
+}
+
+.sub-menu a {
+  font-family: Georgia, serif !important;
+  color: #ffffff !important;
+  font-size: .9em !important;
+  font-weight: 300 !important;
+  text-transform: none !important;
+  line-height: 1.5 !important;
+  height: auto !important;
+  padding: 10px !important;
 }
 
 .hero img {
@@ -91,6 +147,11 @@ img.header-logo {
   padding: 16px 0;
   border-bottom: 1px solid #cccccc;
   color: #1b81be;
+}
+
+.left-menu ul li:hover {
+  cursor: pointer;
+  color: #156391;
 }
 
 .left-menu ul li:last-child {
@@ -159,16 +220,40 @@ h2 {
   background-size: cover;
 }
 
+#photo-1:hover {
+  cursor: pointer;
+}
+
+#photo-1:hover > #photo-cap-1 {
+  background-color: #f9ad10;
+}
+
 #photo-2 {
   background-image: url("../images/grid-photo-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+#photo-2:hover {
+  cursor: pointer;
+}
+
+#photo-2:hover > #photo-cap-2 {
+  background-color: #ba2f28;
+}
+
 #photo-3 {
   background-image: url("../images/grid-photo-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#photo-3:hover {
+  cursor: pointer;
+}
+
+#photo-3:hover > #photo-cap-3 {
+  background-color: #6a4c7f;
 }
 
 .photo-caption {
@@ -184,6 +269,8 @@ h2 {
   font-weight: 700;
   opacity: .9;
   line-height: 44px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #photo-cap-1 {
@@ -236,7 +323,7 @@ footer {
   margin-top: 10px;
 }
 
-.address p, a {
+.address p, .address a {
   color: #ffffff !important;
   line-height: 1.5;
 }
@@ -255,5 +342,11 @@ footer {
   font-size: .9em;
   text-transform: uppercase;
   color: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#donate-button:hover {
+  background-color: #659c40;
 }
 /*# sourceMappingURL=main.css.map */

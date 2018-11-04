@@ -10,6 +10,7 @@ $p-color: #333333;
 $h1-color: #000000;
 $divider-color: #cccccc;
 $bottom-box-color: #343531;
+$drop-color: #555751;
 $head-font: 'Montserrat', sans-serif;
 $body-font: Georgia, serif;
 
@@ -52,17 +53,69 @@ img.header-logo {
         flex-direction: row;
 }
 
-.menu ul li {
+.menu ul li a{
         font-family: $head-font;
         font-weight: 700;
         font-size: 1em;
         color: $menu-color;
-        margin-right: 42px;
+        margin-right: 14px;
+        padding: 0 14px;
         text-transform: uppercase;
+        display: flex;
+        height: 86px;
+        line-height: 92px;
+        text-decoration: none;
+}
+
+.menu-item {
+        border-bottom: 8px solid transparent;
+}
+
+.menu-item:hover {
+        cursor: pointer;
+        border-bottom: 8px solid $green;
+}
+
+.menu-item:hover > a {
+        color: $green !important;
 }
 
 .menu ul li:last-child {
         margin-right: 0;
+}
+
+.menu ul ul {
+        display: none;
+        position: absolute;
+}
+
+.menu ul li:hover > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+}
+
+// .sub-menu li {
+//         height: 50px;
+// }
+
+.sub-menu {
+        margin-top: 7px;
+        width: 200px;
+        background-color: $drop-color;
+        opacity: .96;
+        padding: 6px;
+}
+
+.sub-menu a {
+        font-family: $body-font !important;
+        color: #ffffff !important;
+        font-size: .9em !important;
+        font-weight: 300 !important;
+        text-transform: none !important;
+        line-height: 1.5 !important;
+        height: auto !important;
+        padding: 10px !important;
 }
 
 .hero img{
@@ -92,6 +145,11 @@ img.header-logo {
         padding: 16px 0;
         border-bottom: 1px solid $divider-color;
         color: $blue;
+        
+        &:hover {
+                cursor: pointer;
+                color: darken($color: $blue, $amount: 10%)
+        }
 }
 
 .left-menu ul li:last-child{
@@ -149,18 +207,42 @@ h2 {
         background-image: url('../images/grid-photo-1.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+
+        &:hover {
+                cursor: pointer;
+        }
+
+        &:hover > #photo-cap-1 {
+                background-color: darken($color: $yellow, $amount: 10%);
+        }
 }
 
 #photo-2 {
         background-image: url('../images/grid-photo-2.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+
+        &:hover {
+                cursor: pointer;
+        }
+
+        &:hover > #photo-cap-2 {
+                background-color: darken($color: $red, $amount: 10%);
+        }
 }
 
 #photo-3 {
         background-image: url('../images/grid-photo-3.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+
+        &:hover {
+                cursor: pointer;
+        }
+
+        &:hover > #photo-cap-3 {
+                background-color: darken($color: $purple, $amount: 10%);
+        }
 }
 
 .photo-caption {
@@ -176,6 +258,7 @@ h2 {
         font-weight: 700;
         opacity: .9;
         line-height: 44px;
+        transition: 0.3s;
 }
 
 #photo-cap-1 {
@@ -217,7 +300,7 @@ footer {
         margin-top: 10px;
 }
 
-.address p,a {
+.address p, .address a {
         color: #ffffff !important;
         line-height: 1.5;
 }
@@ -234,4 +317,9 @@ footer {
         font-size: .9em;
         text-transform: uppercase;
         color: #ffffff;
+        transition: 0.3s;
+}
+
+#donate-button:hover {
+        background-color: darken($color: $green, $amount: 10%)
 }
