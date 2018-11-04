@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -8,7 +10,7 @@ html {
 }
 
 header {
-  padding: 0 120px;
+  padding: 0 106px 0 120px;
   height: 92px;
   border-top: 7px solid #1b81be;
   display: -webkit-box;
@@ -48,7 +50,6 @@ img.header-logo {
   font-weight: 700;
   font-size: 1em;
   color: #7d8075;
-  margin-right: 14px;
   padding: 0 14px;
   text-transform: uppercase;
   display: -webkit-box;
@@ -61,6 +62,7 @@ img.header-logo {
 
 .menu-item {
   border-bottom: 8px solid transparent;
+  margin-right: 14px;
 }
 
 .menu-item:hover {
@@ -72,7 +74,7 @@ img.header-logo {
   color: #7eba55 !important;
 }
 
-.menu ul li:last-child {
+.menu ul li:last-child > .menu-item {
   margin-right: 0;
 }
 
@@ -201,10 +203,6 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.photos img {
-  width: 290px;
 }
 
 .photo-container {
@@ -347,6 +345,80 @@ footer {
 }
 
 #donate-button:hover {
+  cursor: pointer;
   background-color: #659c40;
+}
+
+@media only screen and (max-width: 1169px) {
+  header {
+    padding: 0 14px 0 14px;
+    height: 125px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  img.header-logo {
+    margin-top: 20px;
+    -ms-flex-item-align: unset;
+        -ms-grid-row-align: unset;
+        align-self: unset;
+  }
+  .menu ul li a {
+    padding: 0 26px;
+    height: 53px;
+    line-height: 60px;
+  }
+  .main {
+    padding: 50px 14px;
+  }
+  .left-menu ul li {
+    padding: 16px 0 16px 8px;
+  }
+  .photos {
+    padding: 0 14px;
+  }
+  .photo-container {
+    width: 226px;
+    height: 162px;
+    margin-bottom: 130px;
+  }
+  .photo-caption {
+    bottom: -60px;
+    width: 226px;
+    height: 60px;
+    padding: 0 20px;
+    font-size: 1em;
+    line-height: 1.25;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer {
+    height: 225px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .logo-address {
+    width: 480px;
+    font-size: .9em;
+  }
+  .logo-address img {
+    width: 158px;
+  }
+  #donate-button {
+    margin-right: 0px;
+    width: 260px;
+    height: 58px;
+    font-size: 1em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
