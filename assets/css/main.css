@@ -279,7 +279,7 @@ h2 {
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 700;
   opacity: .9;
   line-height: 44px;
@@ -352,7 +352,7 @@ footer {
   border: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 14.4px;
+  font-size: 13px;
   text-transform: uppercase;
   color: #ffffff;
   -webkit-transition: 0.3s;
@@ -432,7 +432,8 @@ footer {
     bottom: -60px;
     width: 228px;
     height: 60px;
-    padding: 0 20px;
+    padding: 0 13px;
+    font-size: 16px;
     line-height: 1.25;
     display: -webkit-box;
     display: -ms-flexbox;
