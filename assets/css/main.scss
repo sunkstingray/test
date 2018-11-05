@@ -31,7 +31,6 @@ html {
 // Main Styling
 
 header {
-        // width: 100%;
         padding: 0 106px 0 122px;
         height: 100px;
         border-top: 7px solid $blue;
@@ -98,9 +97,6 @@ img.header-logo {
         justify-content: space-around;
 }
 
-// .sub-menu li {
-//         height: 50px;
-// }
 
 .sub-menu {
         margin-top: 8px;
@@ -113,7 +109,7 @@ img.header-logo {
 .sub-menu a {
         font-family: $body-font !important;
         color: #ffffff !important;
-        font-size: .8em !important;
+        font-size: 13px !important;
         font-weight: 300 !important;
         text-transform: none !important;
         line-height: 1.5 !important;
@@ -151,7 +147,6 @@ img.header-logo {
         font-family: $head-font;
         font-weight: 500;
         font-size: 13px;
-        // line-height: 44px;
         height: 44px;
         display: flex;
         align-items: center;
@@ -174,7 +169,7 @@ img.header-logo {
 }
 
 .body-text p {
-        font-size: .9em;
+        font-size: 14.4px;
         line-height: 1.8;
 }
 
@@ -206,9 +201,6 @@ h2 {
         justify-content: space-between;
 }
 
-// .photos img {
-//         width: 290px;
-// }
 
 .photo-container {
         position: relative;
@@ -298,11 +290,10 @@ footer {
 
 .logo-address {
         display: flex;
-        // width: 500px;
         align-self: center;
         justify-content: flex-start;
         font-family: $head-font;
-        font-size: .8em;
+        font-size: 13px;
 }
 
 .logo-address img {
@@ -317,19 +308,18 @@ footer {
 
 .address p, .address a {
         color: #ffffff !important;
-        line-height: 1.5;
+        line-height: 1.75;
 }
 
 #donate-button {
         background-color: $green;
-        // margin-right: 200px;
         align-self: center;
         width: 210px;
         height: 46px;
         border: none;
         font-family: $head-font;
         font-weight: 700;
-        font-size: .9em;
+        font-size: 14.4px;
         text-transform: uppercase;
         color: #ffffff;
         transition: 0.3s;
@@ -345,12 +335,9 @@ footer {
 
 @media only screen and (max-width: 1169px) {
         header {
-                // width: 100%;
                 padding: 0 14px 0 14px;
                 height: 134px;
                 border-top: 8px solid $blue;
-                // display: flex;
-                // justify-content: space-between;
                 flex-direction: column;
         }
 
@@ -368,150 +355,85 @@ footer {
         }
 
         .menu ul li a{
-                // font-family: $head-font;
-                // font-weight: 700;
                 font-size: 16px;
-                // color: $menu-color;
-                // margin-right: 20px;
                 padding: 0 25px;
-                // text-transform: uppercase;
-                // display: flex;
                 height: 48px;
                 line-height: 50px;
-                // text-decoration: none;
         }
 
         .main {
-                // display: flex;
-                // flex: 1;
                 padding: 34px 50px 64px 14px;
         }
 
         .left-menu {
                 flex: 0 0 208px;
-                // order: 1;
                 margin-right: 48px;
                 margin-top: 16px;
         }
 
         .left-menu ul li{
-                // font-family: $head-font;
-                // font-weight: 500;
                 font-size: 16px;
                 padding: 0px 0 0px 8px;
                 height: 52px;
-                display: flex;
-                align-items: center;
-                // border-bottom: 1px solid $divider-color;
-                // color: $blue;
-                
-                // &:hover {
-                //         cursor: pointer;
-                //         color: darken($color: $blue, $amount: 10%)
-                // }
         }
 
         h1 {
-                // font-family: $head-font;
-                // font-weight: 700;
-                // font-size: 34px;
                 letter-spacing: -2px;
                 margin-bottom: 8px;
         }
         
         h2 {
-                font-family: $head-font;
-                font-weight: 400;
-                font-size: 22px;
                 margin-top: 22px;
-                margin-bottom: 20px;
-                color: $blue;
-                text-transform: uppercase;
         }
 
         .photos {
-                // display: flex;
                 padding: 0 14px;
-                // justify-content: space-between;
         }
         
         .photo-container {
-                // position: relative;
                 width: 228px;
                 height: 162px;
                 margin-bottom: 140px;
         }
 
         .photo-caption {
-                // position: absolute;
                 bottom: -60px;
                 width: 228px;
                 height: 60px;
                 padding: 0 20px;
-                // padding: 0 20px;
-                // text-align: center;
-                // color: #ffffff;
-                // font-family: $head-font;
-                // text-transform: uppercase;
-                font-size: 1em;
-                // font-weight: 700;
-                // opacity: .9;
                 line-height: 1.25;
-                // transition: 0.3s;
                 display: flex;
                 align-items: center;
-                // justify-content: center;
         }
 
         footer {
-                // width: 100vw;
                 height: 225px;
-                // background-color: $bottom-box-color;
-                // display: flex;
-                // justify-content: space-between;
                 padding: 0;
                 flex-direction: column;
                 justify-content: space-evenly;
         }
 
         .logo-address {
-                // display: flex;
                 width: 480px;
-                // align-self: center;
-                // justify-content: space-between;
-                // font-family: $head-font;
-                font-size: .9em;
+                font-size: 14.4px;
         }
 
         .logo-address img {
                 width: 158px;
-                // align-self: center;
         }
 
         #donate-button {
-                // background-color: $green;
                 margin-right: 0px;
-                // align-self: center;
                 width: 260px;
                 height: 58px;
-                // border: none;
-                // font-family: $head-font;
-                // font-weight: 700;
-                font-size: 1em;
-                // text-transform: uppercase;
-                // color: #ffffff;
-                // transition: 0.3s;
+                font-size: 16px;
         }
 }
 
 
 @media only screen and (max-width: 767px) {
         header {
-                // width: 100%;
-                padding: 0 14px 0 14px;
                 height: 78px;
-                // border-top: 7px solid $blue;
-                // display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
@@ -520,7 +442,6 @@ footer {
 
         img.header-logo {
                 margin-top: 0px;
-                align-self: unset;
                 width: 166px;
         }
 
@@ -559,20 +480,6 @@ footer {
                 margin-top: 38px;
         }
 
-        .left-menu ul li{
-                // font-family: $head-font;
-                // font-weight: 500;
-                font-size: 1em;
-                // padding: 16px 0;
-                // border-bottom: 1px solid $divider-color;
-                // color: $blue;
-                
-                
-                // &:hover {
-                //         // cursor: pointer;
-                //         color: darken($color: $blue, $amount: 10%)
-                // }
-        }
 
         .body-text {
                 flex: 1;
@@ -581,15 +488,11 @@ footer {
         }
 
         .photos {
-                // display: flex;
                 flex-direction: column;
-                padding: 0 14px;
                 margin-bottom: 36px;
-                // justify-content: space-between;
         }
 
         .photo-container {
-                // position: relative;
                 width: 100%;
                 height: auto;
                 padding-top: 71%;
@@ -597,54 +500,27 @@ footer {
         }
 
         .photo-caption {
-                // position: absolute;
-                bottom: -60px;
                 width: 100%;
-                // height: 60px;
-                // padding: 0 20px;
-                // padding: 0 20px;
-                // text-align: center;
-                // color: #ffffff;
-                // font-family: $head-font;
-                // text-transform: uppercase;
-                font-size: 1em;
-                // font-weight: 700;
-                // opacity: .9;
-                // line-height: 1.25;
-                // transition: 0.3s;
-                display: flex;
-                align-items: center;
                 justify-content: center;
         }
 
         footer {
-                // width: 100%;
                 height: 240px;
-                // background-color: $bottom-box-color;
-                // display: flex;
-                // justify-content: space-between;
                 padding: 0 14px;
         }
 
         .logo-address {
-                // display: flex;
                 flex-direction: column;
                 width: 100%;
-                // align-self: center;
                 text-align: center;
-                // justify-content: space-between;
-                // font-family: $head-font;
                 font-size: 12px;
         }
 
         .logo-address img {
-                // width: 210px;
-                // align-self: center;
                 margin-right: 0px;
         }
 
         .address p, .address a {
-                // color: #ffffff !important;
                 line-height: 2;
         }
 }
